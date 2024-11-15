@@ -139,7 +139,7 @@
     @apply w-fit mb-4 px-2 py-1 text-xl font-bold text-orange-200 text-opacity-80 rounded-md bg-opacity-10 bg-orange-400;
 
      h2 {
-      @apply w-fit mb-4 px-2 py-1 text-xl font-bold text-orange-200 text-opacity-80 rounded-md bg-opacity-10 bg-orange-400;
+      @apply w-fit mb-4 px-2 py-1 text-base font-bold text-orange-200 text-opacity-80 rounded-md bg-opacity-10 bg-orange-400 md:text-xl;
     }
     p {
       @apply text-sm md:text-lg;

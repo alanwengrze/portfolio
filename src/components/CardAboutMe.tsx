@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+import { Card, CardContent } from "./ui/card";
 
 import spotlightOrange from "../assets/spotlightOrange.svg"
 
@@ -8,15 +8,17 @@ interface CardAboutMeProps {
 export function CardAboutMe({children}: CardAboutMeProps) {
   return(
     <div>
-      <Card className=" titleCard bgImage cardBorder z-10 bg-inherit relative overflow-hidden  ">
+      <Card className="titleCard bgImage cardBorder z-10 bg-inherit  py-8 relative overflow-hidden ">
+      <CardContent className=" text-orange-200 flex flex-col gap-12">
         {children}
-        {/* <img className="w-48 -z-10 absolute bottom-0  filter  rounded-md xs:"  
-          src={suaveBlur} 
-          alt="" 
-        /> */}
-        <img src={spotlightOrange} alt="" 
-          className="w-72 -z-10 absolute top-0 right-0 animate-pulse duration-2000"
-        />
+      </CardContent>
+        
+      <img 
+        src={spotlightOrange} 
+        alt="Ponto de luz roxo" 
+        className=" -z-10 absolute top-0 right-0 animate-pulse duration-2000 "
+      />
+        
       </Card>
     </div>
   )

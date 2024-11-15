@@ -26,7 +26,7 @@ export function Presentation() {
         className="w-72 -z-10 absolute bottom-0 left-24 animate-pulse duration-2000"
       />
       <img src={engine} alt="" 
-        className=" -z-10 absolute -bottom-8 right-0 animate-spin duration-2000"
+        className="w-8 -z-10 absolute -top-8 left-0 animate-spin duration-2000 md:w-14 md:right-0 md:left-auto"
       />
       </div>
      

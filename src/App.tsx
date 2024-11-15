@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Aos from "aos";
 import spotlight from "./assets/spotlight.svg"
+import wave from "./assets/wave.svg"
 function App() {
   useEffect(() => {
     Aos.init({
@@ -18,7 +19,11 @@ function App() {
       <NavMenu />
       <main className="relative mt-16 cardBorder rounded-md flex flex-col gap-4">
         <Presentation/>
-        <AboutMe />
+        <div id="about" className="relative">
+          <h1 className="px-4 my-8 font-bold">Sobre mim</h1>
+          <AboutMe />
+        </div>
+        
         <Projects />
 
         <img src={spotlight} alt="" 
