@@ -1,5 +1,7 @@
 import { CardAboutMe } from "../../components/CardAboutMe"
+import { CertificateHoverCard } from "@/components/CertificateHoverCard"
 import { SiReact, SiNodedotjs, SiTypescript, SiJavascript, SiTailwindcss, SiStyledcomponents, SiShadcnui } from "react-icons/si"
+import { FaGraduationCap } from "react-icons/fa"
 import { IconBackground } from "@/components/IconBackground"
 import suaveBlur from "../../assets/suaveBlur.svg" 
 import certificate from "../../assets/certificate.svg"
@@ -86,6 +88,18 @@ export function AboutMe() {
           <div>
             <h2 className="titleCard text-md">Certificações</h2>
             <p className="text-sm">Aqui estão algumas das certificações mais recentes que adquiri durante minha jornada de aprendizado:</p>
+          </div>
+          <div className="flex gap-4">
+            <CertificateHoverCard 
+              title="Desenvolvedor Fullstack"
+              institution="Rocketseat"
+              link="https://app.rocketseat.com.br/certificates/bbf33fc1-dcbf-41e0-b2a3-b412843ee62e"
+            />
+             <CertificateHoverCard 
+              title="Desenvolvedor Fullstack"
+              institution="Rocketseat"
+              link="https://app.rocketseat.com.br/certificates/bbf33fc1-dcbf-41e0-b2a3-b412843ee62e"
+            />
           </div>
         </CardAboutMe>
       </div>

@@ -144,6 +144,10 @@
     p {
       @apply text-sm md:text-lg;
     }
+
+    svg {
+      @apply text-orange-200;
+    }
   }
 
   .cardBorder {

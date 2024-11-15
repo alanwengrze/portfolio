@@ -9,7 +9,7 @@ export function CardAboutMe({children}: CardAboutMeProps) {
   return(
     <div>
       <Card className="titleCard bgImage cardBorder z-10 bg-inherit  py-8 relative overflow-hidden ">
-      <CardContent className=" text-orange-200 flex flex-col gap-12">
+      <CardContent className=" flex flex-col gap-12">
         {children}
       </CardContent>
         
