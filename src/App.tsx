@@ -1,6 +1,5 @@
 import { NavMenu } from "./components/NavMenu"
 import { Presentation } from "./page/Presentation" 
-import { Skills } from "./page/Skills"
 import { AboutMe } from "./page/AboutMe"
 import { Projects } from "./page/Projects"
 import 'aos/dist/aos.css';
@@ -21,8 +20,6 @@ function App() {
         <Presentation/>
         <AboutMe />
         <Projects />
-        
-        {/* <Skills /> */}
 
         <img src={spotlight} alt="" 
         className="w-72 -z-10 absolute top-0 right-0 animate-pulse duration-2000"

@@ -1,6 +1,4 @@
-import reactSvg from "../../assets/reactSvg.svg"
 import suaveBlur from "../../assets/suaveBlur.svg"
-import bgGrain from "../../assets/bg-noise.svg"
 import engine from "../../assets/engine.svg"
 export function Presentation() {
   

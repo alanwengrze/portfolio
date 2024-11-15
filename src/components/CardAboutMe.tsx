@@ -1,5 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import suaveBlur from "../assets/suaveBlur.svg"
+import { Card } from "./ui/card";
+
 import spotlightOrange from "../assets/spotlightOrange.svg"
 
 interface CardAboutMeProps {

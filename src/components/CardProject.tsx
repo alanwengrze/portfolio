@@ -4,10 +4,7 @@ import { IconBackground } from "./IconBackground";
 import { SiNodedotjs, SiReact } from "react-icons/si";
 
 
-interface CardProjectProps {
-  children: React.ReactNode
-}
-export function CardProject({children}: CardProjectProps) {
+export function CardProject() {
   return(
     <div>
       <Card className="bgImage cardBorder z-10 bg-inherit relative overflow-hidden  ">
