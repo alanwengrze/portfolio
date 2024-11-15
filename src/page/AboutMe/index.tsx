@@ -1,7 +1,6 @@
 import { CardAboutMe } from "../../components/CardAboutMe"
 import { CertificateHoverCard } from "@/components/CertificateHoverCard"
 import { SiReact, SiNodedotjs, SiTypescript, SiJavascript, SiTailwindcss, SiStyledcomponents, SiShadcnui } from "react-icons/si"
-import { FaGraduationCap } from "react-icons/fa"
 import { IconBackground } from "@/components/IconBackground"
 import suaveBlur from "../../assets/suaveBlur.svg" 
 import certificate from "../../assets/certificate.svg"

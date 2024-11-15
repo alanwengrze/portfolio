@@ -6,7 +6,6 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Aos from "aos";
 import spotlight from "./assets/spotlight.svg"
-import wave from "./assets/wave.svg"
 function App() {
   useEffect(() => {
     Aos.init({
