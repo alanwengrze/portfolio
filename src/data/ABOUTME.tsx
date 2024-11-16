@@ -26,16 +26,17 @@ export const ABOUTME: AboutMe[] = [
   },
   {
     id: Math.random().toString(),
+    title: "Todas as tecnologias",
+    header: <AllSkillsHeader  />,
+    description: "Essas são todas as tecnologias que tenho experiência. Busco me manter sempre atualizado e alinhado com a demanda do mercado.",
+  },
+  {
+    id: Math.random().toString(),
     title: "Certificações",
     header: <CertificateHeader />,
     description: "Aqui estão algumas das certificações mais recentes que adquiri durante minha jornada de aprendizado:",
     certificates: CERTIFICATE
   },
-  {
-    id: Math.random().toString(),
-    title: "Todas as tecnologias",
-    header: <AllSkillsHeader  />,
-    description: "Essas são todas as tecnologias que tenho experiência. Busco me manter sempre atualizado e alinhado com a demanda do mercado.",
-  },
+ 
 
 ]

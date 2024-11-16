@@ -22,6 +22,7 @@
     "@react-three/drei": "^9.115.0",
     "@react-three/fiber": "^8.17.10",
     "aos": "^2.3.4",
+    "axios": "^1.7.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.3.1",

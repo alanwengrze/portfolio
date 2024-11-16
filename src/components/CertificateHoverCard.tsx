@@ -5,6 +5,7 @@ interface CertificateHoverCardProps {
     title: string
     institution: string
     link: string
+    description: string
   }
 }
 export function CertificateHoverCard({certificate}: CertificateHoverCardProps) {
@@ -16,13 +17,13 @@ export function CertificateHoverCard({certificate}: CertificateHoverCardProps) {
       <HoverCardContent className="z-10 absolute cardBorder  w-max p-4 mt-2 rounded-md flex justify-between  bg-background ">
         <section className=" w-full flex flex-col gap-2">
           <h3 className="text-white text-opacity-90">{certificate.title}</h3>
-          <p className="w-96"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laboriosam, porro molestiae repudiandae cum, laudantium, aspernatur aliquid corrupti deserunt dolores commodi debitis! Reprehenderit ea atque dignissimos, maxime ut tempore unde!</p>
-          <h2>{certificate.institution}</h2>
+          <p className="w-96">{certificate.description}</p>
+          <h2 className="mt-4">{certificate.institution}</h2>
           <a 
             href={certificate.link} 
             target="_blank"
             className="flex items-center justify-end gap-2"
-          >Ver certificado <FaExternalLinkAlt /></a>
+          ><span>Ver certificado</span> <FaExternalLinkAlt /></a>
         </section>
       </HoverCardContent>
     </HoverCard>
