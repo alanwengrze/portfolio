@@ -5,10 +5,10 @@ import { Certificates } from "@/page/AboutMe/Certificates";
 
 export function CardAboutMe() {
   return(
-    <div>
+    <div className="">
       {
         ABOUTME.map((aboutme) => (
-          <Card key={aboutme.id} className="titleCard bgImage cardBorder z-10 bg-inherit relative overflow-hidden ">
+          <Card key={aboutme.id} className="titleCard bgImage cardBorder bg-inherit relative overflow-hidden ">
           <CardContent className=" flex flex-col mt-12">
             {aboutme.header}
             <section className="mt-12">

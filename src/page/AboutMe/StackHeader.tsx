@@ -1,36 +1,35 @@
 import { IconBackground } from "@/components/IconBackground";
-import { SiJavascript, SiNodedotjs, SiReact, SiShadcnui, SiStyledcomponents, SiTailwindcss, SiTypescript } from "react-icons/si";
-
+import { SKILLS } from "@/data/SKILLS";
 export function StackHeader(){
   return(
     <header className="relative flex flex-col justify-center items-center gap-8 ">
-    <div className=" flex gap-16">
+    <div className="w-full flex justify-between sm:justify-center sm:gap-16">
       <IconBackground>
-        <SiTailwindcss title="Tailwind CSS"/>
+      {SKILLS.find((skill) => skill.name === "Tailwind CSS")?.icon}
       </IconBackground>
       <IconBackground>
-        <SiReact title="React"/>
+      {SKILLS.find((skill) => skill.name === "React")?.icon}
       </IconBackground>
     </div>
 
-    <div className="flex gap-8">
+    <div className="w-full flex justify-between gap-4 sm:gap-16 sm:justify-center">
       <IconBackground>
-        <SiTypescript title="TypeScript"/>
+      {SKILLS.find((skill) => skill.name === "Typescript")?.icon}
       </IconBackground>
       <IconBackground>
-        <SiJavascript title="Javascript"/>
+      {SKILLS.find((skill) => skill.name === "Javascript")?.icon}
       </IconBackground>
       <IconBackground>
-        <SiNodedotjs title="Nodejs"/>
+        {SKILLS.find((skill) => skill.name === "Node.js")?.icon}
       </IconBackground>
     </div>
   
-    <div className="flex gap-16">
+    <div className="w-full flex justify-between sm:justify-center sm:gap-16">
       <IconBackground>
-        <SiStyledcomponents title="Styled Components"/>
+      {SKILLS.find((skill) => skill.name === "Styled Components")?.icon}
       </IconBackground>
       <IconBackground>
-        <SiShadcnui title="Shadcn UI"/>
+      {SKILLS.find((skill) => skill.name === "Shadcn UI")?.icon}
       </IconBackground>
     </div>
   </header>

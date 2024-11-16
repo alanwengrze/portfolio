@@ -22,8 +22,11 @@ function App() {
           <h1 className="px-4 my-8 font-bold">Sobre mim</h1>
           <AboutMe />
         </div>
+        <div>
+          <h1 className="px-4 my-8 font-bold">Meus projetos</h1>
+          <Projects />
+        </div>
         
-        <Projects />
 
         <img src={spotlight} alt="" 
         className="w-72 -z-10 absolute top-0 right-0 animate-pulse duration-2000"

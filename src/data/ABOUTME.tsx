@@ -1,6 +1,7 @@
 import { CertificateHeader } from "@/page/AboutMe/CertificateHeader"
 import { MyselfHeader } from "@/page/AboutMe/MyselfHeader"
 import { StackHeader } from "@/page/AboutMe/StackHeader"
+import { AllSkillsHeader } from "@/page/AboutMe/AllSkillsHeader"
 import { CERTIFICATE } from "./CERTIFICATE"
 interface AboutMe {
   id: string,
@@ -19,7 +20,7 @@ export const ABOUTME: AboutMe[] = [
   },
   {
     id: Math.random().toString(),
-    title: "Tecnologias que utilizo",
+    title: "Tecnologias que utilizo no meu dia-a-dia",
     header: <StackHeader />,
     description: "Atualmente, estou me especializando nas tecnologias que englobam o universo Javascript. Gosto de me manter atualizado nas novas tecnologias e estou sempre buscando novas maneiras de melhorar minhas habilidades."
   },
@@ -29,6 +30,12 @@ export const ABOUTME: AboutMe[] = [
     header: <CertificateHeader />,
     description: "Aqui estão algumas das certificações mais recentes que adquiri durante minha jornada de aprendizado:",
     certificates: CERTIFICATE
+  },
+  {
+    id: Math.random().toString(),
+    title: "Todas as tecnologias",
+    header: <AllSkillsHeader  />,
+    description: "Essas são todas as tecnologias que tenho experiência. Busco me manter sempre atualizado e alinhado com a demanda do mercado.",
   },
 
 ]
