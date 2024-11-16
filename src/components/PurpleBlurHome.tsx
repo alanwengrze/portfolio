@@ -1,4 +1,6 @@
-import { PurpleBlur } from "./purpleBlur" 
+import { PurpleBlur } from "./PurpleBlur";
+
+ 
 export function PurpleBlurHome() {
   return(
     <div area-label="purple-blur-home">
