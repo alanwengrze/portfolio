@@ -1,5 +1,5 @@
-import suaveBlur from "../../assets/suaveBlur.svg"
 import engine from "../../assets/engine.svg"
+import { PurpleBlurHome } from "@/components/PurpleBlurHome"
 export function Presentation() {
   
   return (
@@ -10,21 +10,7 @@ export function Presentation() {
       <div data-aos=" fade-right" className=" relative ">
         <p className="md:text-lg">Olá! Eu sou Alan Wengrze</p>
         <h1 className="text-xl md:text-3xl  ">Desenvolvedor fullstack.</h1>
-      <img 
-        src={suaveBlur} 
-        alt="" 
-        className="w-72 -z-10 absolute -top-24 right-0   animate-pulse duration-2000"
-      />
-      <img 
-        src={suaveBlur} 
-        alt="" 
-        className=" w-72 -z-10 absolute bottom-0 right-24 animate-pulse duration-2000"
-      />
-      <img 
-        src={suaveBlur} 
-        alt="" 
-        className="w-72 -z-10 absolute bottom-0 left-24 animate-pulse duration-2000"
-      />
+      <PurpleBlurHome />
       <img src={engine} alt="" 
         className="w-8 -z-10 absolute -top-8 left-0 animate-spin duration-2000 md:w-14 md:right-0 md:left-auto"
       />
