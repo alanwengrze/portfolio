@@ -1,7 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import suaveBlur from "../assets/suaveBlur.svg"
 import { IconBackground } from "./IconBackground";
-import { SiNodedotjs } from "react-icons/si";
 import { Project } from "@/data/PROJECTS";
 import { SKILLS } from "@/data/SKILLS";
 

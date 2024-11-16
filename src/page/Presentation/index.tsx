@@ -1,7 +1,7 @@
 import engine from "../../assets/engine.svg"
 import { PurpleBlurHome } from "@/components/PurpleBlurHome"
+
 export function Presentation() {
-  
   return (
     <div 
       className="bgImage overflow-hidden w-full h-screen flex justify-center items-center border-b border-opacity-40 border-zinc-800"
