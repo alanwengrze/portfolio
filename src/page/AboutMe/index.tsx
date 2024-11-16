@@ -4,6 +4,7 @@ import { SiReact, SiNodedotjs, SiTypescript, SiJavascript, SiTailwindcss, SiStyl
 import { IconBackground } from "@/components/IconBackground"
 import suaveBlur from "../../assets/suaveBlur.svg" 
 import certificate from "../../assets/certificate.svg"
+import { CERTIFICATE } from "@/data/CERTIFICATE"
 export function AboutMe() {
   return (
     <div 
@@ -11,10 +12,10 @@ export function AboutMe() {
     >
       <div className="">
         <CardAboutMe>
-          <div className=" w-fit mx-auto p-4 bg-inherit rounded-full shadow-inner shadow-slate-600">
+          <div className="border-e-2 border-orange-100 w-fit mx-auto p-4 bg-inherit rounded-full shadow-inner shadow-slate-600">
             <img 
               src="https://github.com/AlanWengrze.png" alt="Foto de Alan Wengrze" 
-              className=" w-40 border-e-2 border-orange-100 border-opacity-80 rounded-full  filter brightness-50 hover:grayscale duration-500"
+              className="w-40  border-opacity-80 rounded-full  filter brightness-50 hover:grayscale duration-500"
             />
             <img className="absolute top-8 w-56 -z-10   filter rounded-md xs:"  
               src={suaveBlur} 
@@ -76,9 +77,9 @@ export function AboutMe() {
             <img 
               src={certificate} 
               alt=""
-              className="w-48 -z-10 mx-auto"
+              className="border-e-2 border-orange-100 border-opacity-80 rounded-full shadow-inner shadow-slate-600 w-48 -z-10 mx-auto"
             />
-            <img className="w-48 absolute -z-10 filter blur-lg rounded-md top-0 left-1/4"
+            <img className="w-48 absolute -z-10 rounded-md top-0 left-1/4"
               src={suaveBlur} 
               alt="" 
             />
@@ -88,17 +89,23 @@ export function AboutMe() {
             <h2 className="titleCard text-md">Certificações</h2>
             <p className="text-sm">Aqui estão algumas das certificações mais recentes que adquiri durante minha jornada de aprendizado:</p>
           </div>
-          <div className="flex gap-4">
-            <CertificateHoverCard 
-              title="Desenvolvedor Fullstack"
-              institution="Rocketseat"
-              link="https://app.rocketseat.com.br/certificates/bbf33fc1-dcbf-41e0-b2a3-b412843ee62e"
-            />
-             <CertificateHoverCard 
-              title="Desenvolvedor Fullstack"
-              institution="Rocketseat"
-              link="https://app.rocketseat.com.br/certificates/bbf33fc1-dcbf-41e0-b2a3-b412843ee62e"
-            />
+          <div className=" flex gap-4">
+            {CERTIFICATE.map((certificate) => <CertificateHoverCard key={certificate.id} certificate={certificate} />)}
+
+            <div className="block lg:hidden">
+              <div className="flex gap-2 flex-wrap">
+                {
+                CERTIFICATE.map((certificate) => (
+                <a 
+                  href={certificate.link} 
+                  target="_blank" 
+                  key={certificate.id} 
+                  className="text-sm text-purple-300 text-opacity-75 px-2 py-1 rounded-md bg-inherit shadow-inner shadow-slate-600 hover:scale-105 duration-500 hover:saturate-50"
+                >{certificate.title}
+                </a>))
+                }
+              </div>
+            </div>
           </div>
         </CardAboutMe>
       </div>
