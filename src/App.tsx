@@ -14,16 +14,16 @@ function App() {
     });
   })
   return (
-    <div className="max-w-6xl p-4 mx-auto ">
+    <div className=" px-4 mx-auto xl:w-10/12">
       <NavMenu />
-      <main className="relative mt-16 cardBorder rounded-md flex flex-col gap-4">
+      <main className="relative  cardBorder rounded-md flex flex-col gap-4">
         <Presentation/>
         <div id="about" className="relative">
           <h1 className="px-4 my-8 font-bold">Sobre mim</h1>
           <AboutMe />
         </div>
         <div>
-          <h1 className="px-4 my-8 font-bold">Meus projetos</h1>
+          <h1 className="px-4 my-8 font-bold">Projetos recentes</h1>
           <Projects />
         </div>
         

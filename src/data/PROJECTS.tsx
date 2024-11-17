@@ -1,21 +1,49 @@
-
-
+import { ImgDesign } from "@/components/ImgDesign"
 export type Project = {
   id: string
   title: string
   description: string
-  image: string
+  image: React.ReactNode
   link: string
+  repo: string
   techs: string[]
 }
 
 export const PROJECTS: Project[] = [
   {
     id: Math.random().toString(),
-    title: 'Projeto 1',
-    description: 'Descricção do projeto 1',
-    image: 'https://via.placeholder.com/150',
+    title: 'Food explorer',
+    description: 'Food explorer é uma aplicação fullstack que simula um site de comida. Ele conta com dois tipos de usuários: O admin, que tem acesso a criação, edição e exclusão de pratos, e o usuário, que tem acesso apenas a visualização dos pratos. Além disso, ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site.',
+    image: <ImgDesign src="../../public/food-explorer.webp" alt=""/>,
+    link: 'https://alnfoodexplorer.netlify.app/',
+    repo: 'https://github.com/alanwengrze/food-explorer-frontend',
+    techs: ["React", "Javascript", "Styled Components", "Axios", "Express", "Node.js", "SQLite", "Knex.js", "JSON Web Tokens", "React Router"]
+  },
+  {
+    id: Math.random().toString(),
+    title: 'Coffee Delivery',
+    description: 'Coffee Delivery é uma aplicação de um cardápio online de cafés, onde o usuário pode adicionar seus cafés no carrinho e efetuar a compra.',
+    image: <ImgDesign src="../../public/coffee-delivery.webp" alt=""/>,
+    link: 'https://ignite-coffe-delivery-two.vercel.app/',
+    repo: 'https://github.com/alanwengrze/ignite_coffe-delivery',
+    techs: ["React", "Typescript", "Styled Components", "React Router", "React Hook Form", "Zod", "Immer"]
+  },
+  {
+    id: Math.random().toString(),
+    title: 'Ignite Timer',
+    description: 'Ignite Timer é um cronometro simples feito com React e Typescript. Baseado no sistema Pomodoro, Ele te permite criar tarefas e gerenciar seus tempos de trabalho e descanso.',
+    image: <ImgDesign src="../../public/ignite-timer.webp" alt=""/>,
     link: 'https://github.com/AlanWengrze',
-    techs: ["Javascript", "Typescript", "React", "Tailwind CSS", "Node.js"]
+    repo: 'https://github.com/alanwengrze/ignite-timer',
+    techs: ["React", "Typescript", "Styled Components", "Zod", "React Hook Form", "Immer", "React Router"]
+  },
+  {
+    id: Math.random().toString(),
+    title: 'Favorite Movies',
+    description: 'Favorite Movies é um sistema de filmes, onde o usuário pode criar uma lista de filmes com suas avaliações e comentários. Ele tem também um sistema de busca, onde o usuário pode pesquisar filmes pelo gênero ou título. Ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site. Além disso, o usuário pode também editar seu perfil. Todos os dados são armazenados no banco de dados.',
+    image: <ImgDesign alt="" src="../../public/favorite-movies.webp"/>,
+    link: 'https://yourfavoritemovies.netlify.app/',
+    repo: 'https://github.com/alanwengrze/favoriteMovies-frontend',
+    techs: ["React", "Javascript", "Styled Components", "Node.js", "Axios", "Express", "SQLite", "Knex.js", "JSON Web Tokens", "React Router" ]
   }
 ]

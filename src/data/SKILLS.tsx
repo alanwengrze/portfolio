@@ -1,5 +1,7 @@
 import { 
-  SiNodedotjs, SiReact, SiTypescript, SiJavascript, SiStyledcomponents, SiHtml5, SiCss3, SiTailwindcss, SiGit, SiGithub, SiVisualstudiocode, SiFigma, SiAxios, SiInsomnia, SiExpress, SiSqlite, SiKnexdotjs, SiJsonwebtokens, SiReacthookform, SiReactrouter, SiShadcnui
+  SiNodedotjs, SiReact, SiTypescript, SiJavascript, SiStyledcomponents, SiHtml5, SiCss3, SiTailwindcss, SiGit, SiGithub, SiVisualstudiocode, SiFigma, SiAxios, SiInsomnia, SiExpress, SiSqlite, SiKnexdotjs, SiJsonwebtokens, SiReacthookform, SiReactrouter, SiShadcnui,
+  SiZod,
+  SiImmer
 } from "react-icons/si";
 
 export const SKILLS = [
@@ -23,5 +25,7 @@ export const SKILLS = [
   { name: "JSON Web Tokens", icon: <SiJsonwebtokens title="JSON Web Tokens" /> }, 
   { name: "React Hook Form", icon: <SiReacthookform title="React Hook Form" /> }, 
   { name: "React Router", icon: <SiReactrouter title="React Router" /> }, 
-  { name: "Shadcn UI", icon: <SiShadcnui title="Shadcn UI" /> }
+  { name: "Shadcn UI", icon: <SiShadcnui title="Shadcn UI" /> },
+  { name: "Zod", icon: <SiZod title="Zod" /> },
+  { name: "Immer", icon: <SiImmer title="Immer" /> },
 ]
