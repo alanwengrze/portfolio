@@ -12,7 +12,7 @@ export function CertificateHoverCard({certificate}: CertificateHoverCardProps) {
   return(
     // certificates desktop
     <HoverCard>
-      <HoverCardTrigger className=" hidden lg:block cursor-pointer p-4 rounded-full shadow-inner shadow-slate-600 hover:scale-105 duration-500 hover:saturate-50">
+      <HoverCardTrigger href={certificate.link}	target="_blank" className=" hidden lg:block cursor-pointer p-4 rounded-full shadow-inner shadow-slate-600 hover:scale-105 duration-500 hover:saturate-50">
         <FaGraduationCap />
       </HoverCardTrigger>
       <HoverCardContent className="z-10 cardBorder p-4 mt-2  rounded-md  bg-background w-max flex flex-col gap-2">
