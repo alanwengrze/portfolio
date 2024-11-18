@@ -29,28 +29,34 @@ export function Contact () {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    const response = await axios.post("https://formspree.io/f/", data, {
-      headers: {
-        Accept: "application/json",
-        'Content-Type': 'application/json'
-      }
-    })
-    if(response.status === 200) {
+    try{
+      await axios.post("https://formspree.io/f/", data, {
+        headers: {
+          Accept: "application/json",
+          'Content-Type': 'application/json'
+        }
+      })
       toast.success("Mensagem enviada com sucesso!");
-    }else {
+      form.reset();
+    }catch (error) {
       toast.error("Ocorreu um erro ao enviar a mensagem.");
     }
-    form.reset();
   };
 
   return (
-    <div className="w-full h-screen">
+    <section className="px-4 w-full h-screen mx-auto  text-zinc-400">
+      <div className="w-full mx-auto   cardBorder rounded-md p-4">
+      <div className="my-8">
+        <h2 className="text-lg font-bold pb-4">Vamos trabalhar juntos?</h2>
+        <p className="text-base text-zinc-400">Se você está precisando de um desenvolvedor para seu projeto ou quer saber mais sobre o meu trabalho, fale comigo!
+        </p>
+      </div>
       <Form
         {...form}
       >
         <form 
           onSubmit={form.handleSubmit(onSubmit)}
-          className="flex flex-col gap-4 px-4 text-white"
+          className="flex flex-col gap-6 "
         >
         <FormField
           control={form.control}
@@ -112,7 +118,8 @@ export function Contact () {
           <Button type="submit" className="text-white">Submit</Button>
         </form>
       </Form>
-    </div>
+      </div>
+    </section>
     
   );
 }

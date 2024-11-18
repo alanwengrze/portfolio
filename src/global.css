@@ -118,7 +118,7 @@
   }
 
   p, span {
-    @apply text-sm font-light text-zinc-400;
+    @apply text-sm font-light text-zinc-300;
   }
 
   h1, h2 {
@@ -172,6 +172,11 @@
       width: 1.rem;
       height: 1.rem;
     }
+  }
+
+  .inputCustom {
+    @apply bg-zinc-900 text-white text-opacity-80 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-orange-200;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   
 }
