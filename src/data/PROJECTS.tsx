@@ -13,11 +13,11 @@ export const PROJECTS: Project[] = [
   {
     id: Math.random().toString(),
     title: 'Food explorer',
-    description: 'Food explorer é uma aplicação fullstack que simula um site de comida. Ele conta com dois tipos de usuários: O admin, que tem acesso a criação, edição e exclusão de pratos, e o usuário, que tem acesso apenas a visualização dos pratos. Além disso, ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site.',
+    description: 'Food explorer é uma aplicação web que simula um site de comida. Ela conta com dois tipos de usuários: O admin, que tem acesso a criação, edição e exclusão de pratos, e o usuário, que tem acesso apenas a visualização dos pratos. Além disso, ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site. ',
     image: <ImgDesign src="./food-explorer.webp" alt="Food Explorer"/>,
     link: 'https://alnfoodexplorer.netlify.app/',
     repo: 'https://github.com/alanwengrze/food-explorer-frontend',
-    techs: ["React", "Javascript", "Styled Components", "Axios", "Express", "Node.js", "SQLite", "Knex.js", "JSON Web Tokens", "React Router"]
+    techs: ["React", "Javascript", "Styled Components", "Axios", "Express", "Node.js", "SQLite", "Knex.js", "JSON Web Tokens", "React Router", "Jest"]
   },
   {
     id: Math.random().toString(),
@@ -39,8 +39,8 @@ export const PROJECTS: Project[] = [
   },
   {
     id: Math.random().toString(),
-    title: 'Favorite Movies',
-    description: 'Favorite Movies é um sistema de filmes, onde o usuário pode criar uma lista de filmes com suas avaliações e comentários. Ele tem também um sistema de busca, onde o usuário pode pesquisar filmes pelo gênero ou título. Ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site. Além disso, o usuário pode também editar seu perfil. Todos os dados são armazenados no banco de dados.',
+    title: 'Fav Movies',
+    description: 'Fav Movies é um sistema de filmes, onde o usuário pode criar uma lista de filmes com suas avaliações e comentários, buscar seus filmes e filtrar por nome ou gênero. Ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site. ',
     image: <ImgDesign alt="Favorite Movies" src="./favorite-movies.webp"/>,
     link: 'https://yourfavoritemovies.netlify.app/',
     repo: 'https://github.com/alanwengrze/favoriteMovies-frontend',

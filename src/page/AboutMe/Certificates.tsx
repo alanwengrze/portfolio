@@ -2,6 +2,7 @@ import { CertificateHoverCard } from "@/components/CertificateHoverCard"
 import { CERTIFICATE } from "@/data/CERTIFICATE"
 export function Certificates() {
   return(
+    // desktop
     <div className="flex gap-4 flex-wrap">
       {CERTIFICATE.map((certificate) => <CertificateHoverCard key={certificate.id} certificate={certificate} />)}
 

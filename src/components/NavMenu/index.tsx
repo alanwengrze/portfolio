@@ -20,15 +20,15 @@ export function NavMenu () {
                 description="Bem vindo ao meu portifólio"
                 link="#presentation"
               />
-               <ItemList 
-                title="Projetos"
-                description="Alguns dos meus projetos"
-                link="#projects"
-              />
               <ItemList 
                 title="Sobre"
                 description="Uma breve descrição sobre mim"
                 link="#about"
+              />
+                <ItemList 
+                title="Projetos"
+                description="Alguns dos meus projetos"
+                link="#projects"
               />
             </ul>
           </NavigationMenuContent>
