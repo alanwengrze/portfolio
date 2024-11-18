@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Aos from "aos";
 import spotlight from "./assets/spotlight.svg"
+import { Contact } from "./page/Contact"
 function App() {
   useEffect(() => {
     Aos.init({
@@ -27,6 +28,10 @@ function App() {
         <div>
           <Title title="Projetos recentes"/>
           <Projects />
+        </div>
+        <div id="contact">
+          <Title title="Contato"/>
+          <Contact />
         </div>
         <img src={spotlight} alt="" 
         className="w-72 -z-10 absolute top-0 right-0 animate-pulse duration-2000"
