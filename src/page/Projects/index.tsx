@@ -9,7 +9,7 @@ import {
 import { PROJECTS } from "@/data/PROJECTS"
 export function Projects() {
   return(
-    <section aria-label="Projetos" id="projects" className="px-4 w-full h-full ">
+    <section aria-label="Projetos" className="px-4 w-full h-full ">
       <Carousel
         opts={{
           loop: true,
@@ -24,8 +24,8 @@ export function Projects() {
             </CarouselItem>
           )}
         </CarouselContent>
-        <CarouselPrevious className="text-white shadow shadow-zinc-700" />
-        <CarouselNext className="text-white shadow shadow-zinc-700"/>
+        <CarouselPrevious className="text-foreground shadow-md hover:text-background" />
+        <CarouselNext className="text-foreground  shadow-md hover:text-background"/>
       </Carousel>
       
     </section>

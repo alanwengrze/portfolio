@@ -13,21 +13,20 @@ interface CardProjectProps {
 export function CardProject({project}: CardProjectProps) {
   return(
     <>
-      <Card className="bgImage cardBorder mb-8 z-10 bg-inherit overflow-hidden flex flex-col lg:justify-between lg:h-full">
-      <div aria-label="Imagem do projeto" className="">{project.image}</div>
-      <CardHeader className="relative">
-          <CardTitle className="titleCard md:text-2xl">{project.title}</CardTitle>
-          <CardDescription className=" text-zinc-400 text-pretty font-light md:text-lg ">{project.description}</CardDescription>
+      <Card className=" mb-8 z-10 bg-inherit overflow-hidden flex flex-col lg:h-full lg:justify-between">
+      <div aria-label="Imagem do projeto" className="mb-4">{project.image}</div>
+      <CardHeader>
+          <CardTitle className="mb-4">{project.title}</CardTitle>
+          <CardDescription className="cardDescription ">{project.description}</CardDescription>
           <a 
-            href={project.link} 
+            href={project.link}
             target="_blank"
             className="link"
-          >Ver projeto  <FaExternalLinkAlt className="text-orange-200"/></a>
+          >Ver projeto  <FaExternalLinkAlt /></a>
       </CardHeader>
-        
-        <CardContent className="text-orange-200 mt-8">
-          <div aria-label="Tecnologias utilizadas" className="relative ">
-            <h2 className="titleCard">Tecnologias utilizadas</h2>
+        <CardContent className="mt-8">
+          <div aria-label="Tecnologias utilizadas" className="relative">
+            <h2 className="customTitleCard my-4 md:my-8">Tecnologias utilizadas</h2>
             <img className="w-24 -z-10 absolute -top-7 -left-6 filter  rounded-md xs:"  
             src={suaveBlur} 
             alt="Ponto de luz roxo desfocado" 

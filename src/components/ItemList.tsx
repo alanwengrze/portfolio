@@ -6,9 +6,9 @@ interface ItemListProps {
 }
 export function ItemList({title, description, link}: ItemListProps) {
   return (
-      <li className="w-full flex flex-col p-4 rounded-md hover:brightness-125 hover:bg-zinc-900 hover:duration-500">
+      <li  className="hoverTest w-full flex flex-col p-4 rounded-md hover:ring-2 ring-ring hover:scale-105 hover:duration-500">
         <a href={link} className="flex flex-col target:scroll-m-5">{title}
-        <span className="text-textColor">{description}</span>
+        <span className="">{description}</span>
         </a>      
       </li>
   )

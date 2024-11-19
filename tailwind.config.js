@@ -12,13 +12,9 @@ export default {
 			screens: {
 				'xs': '480px',
 			},
-			backgroundImage: {
-				noise: 'url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkzIiBoZWlnaHQ9IjQwOCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGZpbHRlciBpZD0ibm9pc2UiPgogICAgPGZlVHVyYnVsZW5jZSAKICAgICAgdHlwZT0iZnJhY3RhbE5vaXNlIiAKICAgICAgYmFzZUZyZXF1ZW5jeT0iMC42NSIgCiAgICAvPgogICAgPGZlQ29tcG9zaXRlCiAgICAgIG9wZXJldG9yPSJpbiIKICAgICAgaW4yPSJTb3VyY2VHcmFwaGljIgogICAgICByZXN1bHQ9Im1vbm9Ob2lzZSIKICAgIC8+CiAgPC9maWx0ZXI+CjxwYXRoIGQ9Ik0yMjkuMDE4IDU4LjExMzVDMTk4LjUxOCAtOC44ODY1IDE2NC4wMTggLTYwLjM4NjUgNzUuNTE3NyAxNjYuMTEzQzY3LjE4NDQgMTc4LjExMyA0My4wMTc3IDIwOS42MTMgMTMuMDE3NyAyMzkuNjEzQy0xNi45ODIzIDI2OS42MTMgMTYuMTg0NCAzMTcuNDQ3IDM2LjUxNzcgMzM3LjYxM0M0OS41MTc3IDM1OC40NDcgODQuMTE3NyA0MDEuMjE0IDExOC41MTggNDA1LjYxM0MxNjEuNTE4IDQxMS4xMTMgMjM1LjUxOCA0MDAuMTEzIDI1OC41MTggMzkxLjExM0MyODEuNTE4IDM4Mi4xMTMgMzA0LjAxOCAzMTQuNjEzIDI4NS41MTggMjc3LjExM0MyNjcuMDE4IDIzOS42MTMgMTk4LjAxOCAyODguNjEzIDE3NS41MTggMjAyLjExM0MxNTMuMDE4IDExNS42MTMgMjU5LjUxOCAxMjUuMTE0IDIyOS4wMTggNTguMTEzNVoiCmZpbGw9IiNkMGQiCmZpbHRlcj0idXJsKCNub2lzZSkiCi8+Cjwvc3ZnPgo=")'
-			},
   		colors: {
 				transparent: 'transparent',
-  			background: '#0D0D0D',
-				textColor: '#A1A1A1',
+  			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
 				
   			card: {
@@ -30,7 +26,7 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: 'hsl(var(--primary)/0.10)',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
@@ -49,7 +45,10 @@ export default {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
-  			border: 'hsl(var(--border))',
+  			border: {
+					DEFAULT: 'hsl(var(--border))',
+					icon: 'hsl(var(--border-icon))',
+				},
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
   			chart: {

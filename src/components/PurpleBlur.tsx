@@ -1,4 +1,4 @@
-import suaveBlur from '../assets/suaveBlur.svg'
+import suaveBlur from '../assets/circleBlurOrange.svg'
 
 interface PurpleBlurProps {
   className?: string

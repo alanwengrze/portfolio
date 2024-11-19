@@ -4,8 +4,8 @@ export function CertificateHeader() {
     <header className="relative flex">
       <img 
         src={certificate} 
-        alt=""
-        className="border-e-2 border-orange-100 border-opacity-80 rounded-full shadow-inner shadow-slate-600 w-48 -z-10 mx-auto"
+        alt="Imagem de certificado"
+        className="bgStyleIcon dark:iconShadowDark border-opacity-80 rounded-full w-48 -z-10 mx-auto"
       />
     </header>
   )

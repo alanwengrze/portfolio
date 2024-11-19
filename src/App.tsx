@@ -9,6 +9,8 @@ import { useEffect } from "react";
 import Aos from "aos";
 import spotlight from "./assets/spotlight.svg"
 import { Contact } from "./page/Contact"
+import { ThemeProvider } from "./components/theme-provider"
+import { ModeToggle } from "./components/mode-toggle"
 function App() {
   useEffect(() => {
     Aos.init({
@@ -17,27 +19,31 @@ function App() {
     });
   })
   return (
-    <div className=" px-4 mx-auto xl:w-10/12">
-      <NavMenu />
-      <main className="relative  cardBorder rounded-md flex flex-col gap-4">
-        <Presentation/>
-        <div id="about" className="relative">
-          <Title title="Sobre mim"/>
-          <AboutMe />
-        </div>
-        <div>
-          <Title title="Projetos recentes"/>
-          <Projects />
-        </div>
-        <div id="contact">
-          <Title title="Contato"/>
-          <Contact />
-        </div>
-        <img src={spotlight} alt="" 
-        className="w-72 -z-10 absolute top-0 right-0 animate-pulse duration-2000"
-        />
-      </main>
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div className=" px-4 mx-auto xl:w-10/12">
+        <main className="relative border border-border rounded-md flex flex-col gap-4">
+          <NavMenu />
+          <ModeToggle />
+          <Presentation/>
+          <div id="about" className="relative">
+            <Title title="Sobre mim"/>
+            <AboutMe />
+          </div>
+          <div id="projects">
+            <Title title="Projetos recentes"/>
+            <Projects />
+          </div>
+          <div id="contact">
+            <Title title="Contato"/>
+            <Contact />
+          </div>
+          <img src={spotlight} alt="" 
+          className="w-72 -z-10 absolute top-0 right-0 animate-pulse duration-2000"
+          />
+        </main>
+      </div>
+    </ThemeProvider>
+    
   )
 }
 

@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
     title: 'Ignite Timer',
     description: 'Ignite Timer é um cronometro simples feito com React e Typescript. Baseado no sistema Pomodoro, Ele te permite criar tarefas e gerenciar seus tempos de trabalho e descanso.',
     image: <ImgDesign src="./ignite-timer.webp" alt="Ignite Timer"/>,
-    link: 'https://github.com/AlanWengrze',
+    link: 'https://ignite-timer-gcsunw2e6-alanwengrzes-projects.vercel.app/',
     repo: 'https://github.com/alanwengrze/ignite-timer',
     techs: ["React", "Typescript", "Styled Components", "Zod", "React Hook Form", "Immer", "React Router"]
   },

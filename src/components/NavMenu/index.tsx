@@ -4,12 +4,12 @@ import { ItemList } from "../ItemList"
 
 export function NavMenu () {
   return(
-    <NavigationMenu className="z-50 fixed m-auto w-full text-white">
-      <NavigationMenuList className="">
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="border cardBorder rounded-md">Menu</NavigationMenuTrigger>
+    <NavigationMenu className="z-50 absolute left-4 top-4">
+      <NavigationMenuList>
+        <NavigationMenuItem className="rounded-md">
+          <NavigationMenuTrigger className="border border-border rounded-md">Menu</NavigationMenuTrigger>
             
-          <NavigationMenuContent className="min-w-64 bg-background p-8 h-auto text-opacity-95 text-white"
+          <NavigationMenuContent className="min-w-60 bg-background p-8 h-auto text-opacity-95"
           >
             <ul className=" m-auto flex flex-col gap-4"
             data-aos="fade-up"

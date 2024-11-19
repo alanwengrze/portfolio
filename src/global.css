@@ -41,7 +41,7 @@
         --popover: 0 0% 100%;
         --popover-foreground: 222.2 84% 4.9%;
         --primary: 222.2 47.4% 11.2%;
-        --primary-foreground: 210 40% 98%;
+        --primary-foreground: 245 58% 51%;
         --secondary: 210 40% 96.1%;
         --secondary-foreground: 222.2 47.4% 11.2%;
         --muted: 210 40% 96.1%;
@@ -51,6 +51,7 @@
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 210 40% 98%;
         --border: 214.3 31.8% 91.4%;
+        --border-icon: 240, 8.2%, 11.96%;
         --input: 214.3 31.8% 91.4%;
         --ring: 222.2 84% 4.9%;
         --chart-1: 12 76% 61%;
@@ -72,11 +73,11 @@
         --background: 222.2 84% 4.9%;
         --foreground: 210 40% 98%;
         --card: 222.2 84% 4.9%;
-        --card-foreground: 210 40% 98%;
+        --card-foreground: 240 6% 90%;
         --popover: 222.2 84% 4.9%;
         --popover-foreground: 210 40% 98%;
         --primary: 210 40% 98%;
-        --primary-foreground: 222.2 47.4% 11.2%;
+        --primary-foreground: 32 98% 83.2%;
         --secondary: 217.2 32.6% 17.5%;
         --secondary-foreground: 210 40% 98%;
         --muted: 217.2 32.6% 17.5%;
@@ -85,9 +86,10 @@
         --accent-foreground: 210 40% 98%;
         --destructive: 0 62.8% 30.6%;
         --destructive-foreground: 210 40% 98%;
-        --border: 217.2 32.6% 17.5%;
+        --border: 240, 8.2%, 11.96%;
+        --border-icon: 34, 100%, 96%;
         --input: 217.2 32.6% 17.5%;
-        --ring: 212.7 26.8% 83.9%;
+        --ring: 32 98% 83%;
         --chart-1: 220 70% 50%;
         --chart-2: 160 60% 45%;
         --chart-3: 30 80% 55%;
@@ -109,20 +111,20 @@
     @apply border-border;
     }
   body {
-    @apply bg-background;
+    @apply bg-background border-orange-200 text-foreground;
     
     }
 
   :focus{
-    @apply outline-0  ring-2 ring-offset-2 ring-offset-background ring-orange-200;
+    @apply outline-0 ring-2 ring-offset-2 ring-offset-background ring-ring;
   }
 
   p, span {
-    @apply text-sm font-light text-zinc-300;
+    @apply text-sm font-light;
   }
 
   h1, h2 {
-    @apply text-white;
+    @apply  font-bold;
   }
   h1 {
     @apply text-2xl
@@ -133,32 +135,29 @@
   }
 
   .link {
-    @apply absolute bottom-0 right-4 flex items-center justify-end gap-2 text-white text-sm md:text-base;
+    @apply inline-flex w-fit items-center justify-end gap-2 text-popover-foreground text-sm bg-primary rounded-md px-2 py-1 md:text-base;
   }
 
-  .glass {
-    @apply backdrop-blur border border-solid border-white/20;
-  }
+  /* text color like p, span */
+  .customCardForeground {
 
-  .titleCard {
-    @apply w-fit mb-4 px-2 py-1 text-xl font-bold text-orange-200 text-opacity-80 rounded-md bg-opacity-10 bg-orange-400;
-
-     h2 {
-      @apply w-fit mb-4 px-2 py-1 text-base font-bold text-orange-200 text-opacity-80 rounded-md bg-opacity-10 bg-orange-400 md:text-xl;
-    }
     p {
       @apply text-sm md:text-lg;
     }
 
     svg {
-      @apply text-orange-200;
+      @apply text-primary-foreground dark:text-orange-200;
     }
   }
 
-  .cardBorder {
-    border: 1px solid rgba(28, 28, 33, 1);
+  .customTitleCard {
+    @apply w-fit text-base px-4 py-2 text-primary-foreground bg-primary   rounded-md md:text-2xl;
   }
 
+
+  .cardDescription {
+    @apply text-sm text-card-foreground text-pretty font-light md:text-lg;
+  }
 
   .bgImage {
     background-size: cover;
@@ -174,9 +173,17 @@
     }
   }
 
-  .inputCustom {
-    @apply bg-zinc-900 text-white text-opacity-80 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-orange-200;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  .iconShadowDark {
+    @apply border-e-2 shadow-inner shadow-slate-600;
+  }
+  
+  .bgStyleIcon {
+    @apply  border-border-icon shadow-md cursor-pointer  hover:brightness-125 hover:scale-105 duration-500;
+  }
+
+
+  .hoverTest {
+    @apply hover:bg-foreground hover:text-background hover:scale-105 duration-500;
   }
   
 }
