@@ -22,8 +22,10 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className=" px-4 mx-auto xl:w-10/12">
         <main className="relative border border-border rounded-md flex flex-col gap-4">
-          <NavMenu />
-          <ModeToggle />
+          <div>
+            <NavMenu />
+            <ModeToggle />
+          </div>
           <Presentation/>
           <div id="about" className="relative">
             <Title title="Sobre mim"/>
@@ -37,7 +39,7 @@ function App() {
             <Title title="Contato"/>
             <Contact />
           </div>
-          <img src={spotlight} alt="" 
+          <img src={spotlight} alt="Raio de luz branca" 
           className="w-72 -z-10 absolute top-0 right-0 animate-pulse duration-2000"
           />
         </main>

@@ -5,7 +5,7 @@ export function Presentation() {
   return (
     <div
       arai-label="Página inicial"
-      className="dark:bgImage overflow-hidden w-full flex flex-col items-center justify-center h-80 border-b border-border sm:h-screen"
+      className="dark:bgImage overflow-hidden w-full h-screen flex flex-col items-center justify-center border-b border-border"
       id="presentation"
     >
       <div aria-label="Apresentação" data-aos="fade-down" className=" relative ">
