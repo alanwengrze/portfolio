@@ -7,7 +7,6 @@ import { Title } from "./components/Title"
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Aos from "aos";
-import spotlight from "./assets/spotlight.svg"
 import { Contact } from "./page/Contact"
 import { ThemeProvider } from "./components/theme-provider"
 import { ModeToggle } from "./components/mode-toggle"
