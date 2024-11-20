@@ -9,7 +9,7 @@ export function PurpleBlur({className}: PurpleBlurProps) {
       src={suaveBlur} 
       alt="Ponto de luz roxa desfocado"
       loading="lazy"
-      className={`w-72 -z-10 absolute  animate-pulse duration-2000 ${className}`}
+      className={`w-52 -z-10 absolute  animate-pulse duration-2000 ${className}`}
     />
   )
 }

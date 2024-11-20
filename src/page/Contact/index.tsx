@@ -45,12 +45,14 @@ export function Contact () {
   };
 
   return (
-    <div className="px-4 h-screen">
-      <section aria-label="Sessão de contato" className="flex mx-auto text-card-foreground rounded-md border border-border">
+    <div className="px-4">
+      <section 
+        aria-label="Sessão de contato" 
+        className="flex mx-auto text-card-foreground rounded-md border border-border">
         <div aria-label="Agrupamento do formulário e imagem" className="w-full flex flex-col justify-center gap-4 p-6">
           <div aria-label="Header do formulário" className="rounded-md">
-            <h2 className="text-base text-foreground font-bold lg:text-3xl">Vamos trabalhar juntos?</h2>
-            <p className=" text-card-foreground lg:text-xl my-4">Precisa de um site, uma página de vendas, um e-commerce ou outro projeto? Vamos fazer isso juntos!
+            <h2 className="text-base text-foreground font-bold lg:text-3xl">Precisa de um desenvolvedor?</h2>
+            <p className=" text-card-foreground lg:text-xl my-4">Quer criar um site, uma página de vendas, cardápio online, um e-commerce ou qualquer outro projeto? Vamos fazer isso juntos!
             </p>
           <Form
             {...form}
@@ -110,7 +112,7 @@ export function Contact () {
                     <Textarea
                       id="message"
                       {...field}
-                      placeholder="ex: Olá, gostaria de saber mais sobre a criação de um site para minha empresa"
+                      placeholder="ex: Olá, gostaria de trabalhar com você!"
                     />
                   </FormControl>
                   <FormMessage />

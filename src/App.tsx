@@ -11,6 +11,8 @@ import spotlight from "./assets/spotlight.svg"
 import { Contact } from "./page/Contact"
 import { ThemeProvider } from "./components/theme-provider"
 import { ModeToggle } from "./components/mode-toggle"
+import { NetworkIcon } from "./page/Presentation/NetworkIcon"
+import { SiGithub, SiLinkedin } from "react-icons/si"
 function App() {
   useEffect(() => {
     Aos.init({
@@ -20,30 +22,42 @@ function App() {
   })
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className=" px-4 mx-auto xl:w-10/12">
-        <main className="relative border border-border rounded-md flex flex-col gap-4">
-          <div>
-            <NavMenu />
-            <ModeToggle />
-          </div>
+      <section className="mx-auto xl:w-10/12 px-4">
+        <header>
+          <NavMenu />
+          <ModeToggle />
+        </header>
+        <main className="relative flex flex-col gap-4 border border-border rounded-md">
           <Presentation/>
-          <div id="about" className="relative">
+          <section id="about" >
             <Title title="Sobre mim"/>
             <AboutMe />
-          </div>
-          <div id="projects">
+          </section>
+          <section id="projects">
             <Title title="Projetos recentes"/>
             <Projects />
-          </div>
-          <div id="contact">
+          </section>
+          <section id="contact">
             <Title title="Contato"/>
             <Contact />
-          </div>
-          <img src={spotlight} alt="Raio de luz branca" 
-          className="w-72 -z-10 absolute top-0 right-0 animate-pulse duration-2000"
-          />
+          </section>
+          <footer className="w-full h-32 flex flex-col justify-center gap-4">
+          <nav className="flex gap-2 justify-center text-primary-foreground"> 
+            <NetworkIcon 
+              link="https://github.com/AlanWengrze"
+              className="hover:text-primary/100"
+              children={<SiGithub title="Github"/>}
+            />
+            <NetworkIcon 
+              link="https://www.linkedin.com/in/alanwengrze/"
+              className="hover:text-blue-500"
+              children={<SiLinkedin title="Linkedin"/>}
+            />
+          </nav>
+          <p className="text-center">Desenvolvido por Alan Wengrze &copy; 2024</p>
+          </footer>
         </main>
-      </div>
+      </section>
     </ThemeProvider>
     
   )

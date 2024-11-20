@@ -14,7 +14,7 @@ export function Certificates() {
             href={certificate.link} 
             target="_blank" 
             key={certificate.id} 
-            className="text-sm text-purple-300 text-opacity-75 px-2 py-1 rounded-md bg-inherit shadow-inner shadow-slate-600 hover:scale-105 duration-500 hover:saturate-50"
+            className="text-sm text-opacity-75 px-2 py-1 rounded-md bg-inherit shadow-inner shadow-slate-600 hover:scale-105 duration-500 hover:saturate-50"
           >{certificate.title}
           </a>))
           }

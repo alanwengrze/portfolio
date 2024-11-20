@@ -4,14 +4,6 @@
 
 /* ... */
 
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
 
   body{
     font-family: 'Inter', sans-serif;
@@ -19,18 +11,6 @@
     -moz-osx-font-smoothing: grayscale;
     font-display: swap;
   }
-
-
-  p, span {
-    line-height: 28.8px;
-    font-weight: 300;
-  }
-
-  h1 {
-    font-size: 1.4rem;
-  }
-
-
 
   @layer base {
   :root {
@@ -179,11 +159,6 @@
   
   .bgStyleIcon {
     @apply  border-border-icon shadow-md cursor-pointer  hover:brightness-125 hover:scale-105 duration-500;
-  }
-
-
-  .hoverTest {
-    @apply hover:bg-foreground hover:text-background hover:scale-105 duration-500;
   }
   
 }

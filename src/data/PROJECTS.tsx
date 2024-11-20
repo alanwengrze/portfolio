@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
   {
     id: Math.random().toString(),
     title: 'Food explorer',
-    description: 'Food explorer é uma aplicação web que simula um site de comida. Ela conta com dois tipos de usuários: O admin, que tem acesso a criação, edição e exclusão de pratos, e o usuário, que tem acesso apenas a visualização dos pratos. Além disso, ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site. ',
+    description: 'Precisa de um sistema de pedidos de comida onde cada um usuário pode ter um perfil com seus pratos favoritos? Food explorer é uma aplicação web que simula um site de comida. Ela conta com dois tipos de usuários: O admin, que tem acesso a criação, edição e exclusão de pratos, e o usuário, que tem acesso visualização e um perfil com seus pratos favoritos.',
     image: <ImgDesign src="./food-explorer.webp" alt="Food Explorer"/>,
     link: 'https://alnfoodexplorer.netlify.app/',
     repo: 'https://github.com/alanwengrze/food-explorer-frontend',
@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
   {
     id: Math.random().toString(),
     title: 'Coffee Delivery',
-    description: 'Coffee Delivery é uma aplicação de um cardápio online de cafés, onde o usuário pode adicionar seus cafés no carrinho e efetuar a compra.',
+    description: 'Precisa de um cardápio online para o seu negócio? Posso fazer para você! Coffee Delivery é uma aplicação de um cardápio online de cafés, onde o usuário pode adicionar seus cafés no carrinho e efetuar a compra.',
     image: <ImgDesign src="./coffee-delivery.webp" alt="Coffee Delivery"/>,
     link: 'https://ignite-coffe-delivery-two.vercel.app/',
     repo: 'https://github.com/alanwengrze/ignite_coffe-delivery',
@@ -31,7 +31,7 @@ export const PROJECTS: Project[] = [
   {
     id: Math.random().toString(),
     title: 'Ignite Timer',
-    description: 'Ignite Timer é um cronometro simples feito com React e Typescript. Baseado no sistema Pomodoro, Ele te permite criar tarefas e gerenciar seus tempos de trabalho e descanso.',
+    description: 'Ignite Timer é um cronometro virtual. Baseado no sistema Pomodoro, ele te permite criar tarefas e gerenciar seus tempos de trabalho e descanso. Quer ter um sistema de cronometro virtual projetado para as suas necessidade? Vamos criar isso!',
     image: <ImgDesign src="./ignite-timer.webp" alt="Ignite Timer"/>,
     link: 'https://ignite-timer-gcsunw2e6-alanwengrzes-projects.vercel.app/',
     repo: 'https://github.com/alanwengrze/ignite-timer',
@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
   {
     id: Math.random().toString(),
     title: 'Fav Movies',
-    description: 'Fav Movies é um sistema de filmes, onde o usuário pode criar uma lista de filmes com suas avaliações e comentários, buscar seus filmes e filtrar por nome ou gênero. Ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site. ',
+    description: 'Quer criar uma lista de filmes com suas avaliações e comentários? Ou qualquer outro tipo de listagem da sua necessidade? Podemos fazer algo como o Fav Movies! Um sistema de filmes onde o usuário pode criar uma lista de filmes com suas avaliações e comentários, buscar seus filmes e filtrar por nome ou gênero. Ele conta com um sistema de autenticação de usuários, onde é necessário realizar login e criar uma conta para acessar o site. ',
     image: <ImgDesign alt="Favorite Movies" src="./favorite-movies.webp"/>,
     link: 'https://yourfavoritemovies.netlify.app/',
     repo: 'https://github.com/alanwengrze/favoriteMovies-frontend',

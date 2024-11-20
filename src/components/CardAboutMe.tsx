@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardTitle } from "./ui/card";
 import { ABOUTME } from "@/data/ABOUTME"
-import spotlightOrange from "../assets/spotlightPurple.svg"
 import { Certificates } from "@/page/AboutMe/Certificates";
+import { EllipseBackground } from "@/page/Presentation/EllipseBackground";
 
 export function CardAboutMe() {
   return(
@@ -23,11 +23,9 @@ export function CardAboutMe() {
             </section>
           </CardContent>
             
-          <img 
-            src={spotlightOrange} 
-            alt="Raio de luz laranja" 
-            className=" -z-10 absolute top-0 right-0 animate-pulse duration-2000 "
-          />
+          <EllipseBackground 
+            className="w-52 h-52 -bottom-44 -left-8"
+          /> 
           </Card>
         ))
       }

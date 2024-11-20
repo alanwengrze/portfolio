@@ -22,13 +22,13 @@ export const ABOUTME: AboutMe[] = [
     id: 2,
     title: "Tecnologias que utilizo no meu dia-a-dia",
     header: <StackHeader />,
-    description: "Atualmente, estou me especializando nas tecnologias que englobam o universo Javascript. Gosto de me manter atualizado nas novas tecnologias e estou sempre buscando novas maneiras de melhorar minhas habilidades."
+    description: "Atualmente, estou me especializando nas tecnologias que englobam o universo Javascript. Elas me permitem criar sites e aplicativos de alta qualidade e modernos."
   },
   {
     id: 3,
     title: "Todas as tecnologias",
     header: <AllSkillsHeader  />,
-    description: "Essas são todas as tecnologias que tenho experiência. Busco me manter sempre atualizado e alinhado com a demanda do mercado.",
+    description: "Essas são todas as tecnologias que tenho experiência. Com essas tecnologias posso construir projetos que vão atender as suas necessidades. Projetos completamente responsivos, com design moderno, performance, acessibilidade e segurança. E principalmente, com uma enorme facilidade de manutenção e escala.",
   },
   {
     id: 4,
