@@ -4,7 +4,7 @@ import { ItemList } from "./ItemList"
 
 export function NavMenu () {
   return(
-    <NavigationMenu className="z-50 fixed top-4  ">
+    <NavigationMenu className="z-50">
       <NavigationMenuList>
         <NavigationMenuItem className="rounded-md">
           <NavigationMenuTrigger className="border border-border rounded-md">Menu</NavigationMenuTrigger>

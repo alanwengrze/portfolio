@@ -9,7 +9,7 @@ import {
 import { PROJECTS } from "@/data/PROJECTS"
 export function Projects() {
   return(
-    <section aria-label="Projetos" className="px-4 w-full h-full ">
+    <section aria-label="Projetos" className="px-4 w-full h-full">
       <Carousel
         opts={{
           loop: true,

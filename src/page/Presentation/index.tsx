@@ -12,7 +12,6 @@ export function Presentation() {
     >
       <section 
         aria-label="Apresentação"
-        
         className="relative"
       >
         <p className="md:text-xl">Olá! Eu sou Alan Wengrze</p>
