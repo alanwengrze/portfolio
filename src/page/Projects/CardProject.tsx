@@ -1,10 +1,9 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import suaveBlur from "../assets/suaveBlur.svg"
-import { IconBackground } from "./IconBackground";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";
+import { IconBackground } from "../../components/IconBackground";
 import { Project } from "@/data/PROJECTS";
 import { SKILLS } from "@/data/SKILLS";
-import { CarouselItem } from "./ui/carousel";
-import { CarouselSkills } from "./CarouselSkills";
+import { CarouselItem } from "../../components/ui/carousel";
+import { CarouselSkills } from "../../components/CarouselSkills";
 import { FaExternalLinkAlt } from "react-icons/fa";
 interface CardProjectProps {
   project: Project
@@ -13,7 +12,7 @@ interface CardProjectProps {
 export function CardProject({project}: CardProjectProps) {
   return(
     <>
-      <Card className=" mb-8 z-10 bg-inherit overflow-hidden flex flex-col lg:h-full lg:justify-between">
+      <Card className="mb-8 z-10 bg-inherit overflow-hidden flex flex-col lg:h-full lg:justify-between">
       <div aria-label="Imagem do projeto" className="mb-4">{project.image}</div>
       <CardHeader>
           <CardTitle className="mb-4">{project.title}</CardTitle>
@@ -27,10 +26,6 @@ export function CardProject({project}: CardProjectProps) {
         <CardContent className="mt-8">
           <div aria-label="Tecnologias utilizadas" className="relative">
             <h2 className="customTitleCard my-4 md:my-8">Tecnologias utilizadas</h2>
-            <img className="w-24 -z-10 absolute -top-7 -left-6 filter  rounded-md xs:"  
-            src={suaveBlur} 
-            alt="Ponto de luz roxo desfocado" 
-            />
           </div>
 
           {/* skills mobile */}

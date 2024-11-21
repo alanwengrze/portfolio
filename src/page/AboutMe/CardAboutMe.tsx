@@ -1,7 +1,7 @@
-import { Card, CardContent, CardDescription, CardTitle } from "./ui/card";
+import { Card, CardContent, CardDescription, CardTitle } from "../../components/ui/card";
 import { ABOUTME } from "@/data/ABOUTME"
 import { Certificates } from "@/page/AboutMe/Certificates";
-import { EllipseBackground } from "@/page/Presentation/EllipseBackground";
+import { EllipseBackground } from "@/components/EllipseBackground";
 
 export function CardAboutMe() {
   return(

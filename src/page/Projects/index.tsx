@@ -1,4 +1,4 @@
-import { CardProject } from "@/components/CardProject"
+import { CardProject } from "@/page/Projects/CardProject"
 import {  
   Carousel,
   CarouselContent,

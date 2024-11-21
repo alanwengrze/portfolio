@@ -1,6 +1,6 @@
-import engine from "../../assets/engine.svg"
 import { Network } from "./Network"
-import { EllipseBackground } from "./EllipseBackground"
+import { EllipseBackground } from "../../components/EllipseBackground"
+import { Engine } from "./Engine"
 
 export function Presentation() {
   return (
@@ -17,20 +17,15 @@ export function Presentation() {
       >
         <p className="md:text-xl">Olá! Eu sou Alan Wengrze</p>
         <h1 className="text-xl font-extrabold md:text-4xl  text-primary-foreground">Desenvolvedor fullstack.</h1>
-        {/* <PurpleBlurHome /> */}
-        <img 
-          src={engine} 
-          alt="Engrenagem com animação de rotação" 
-          className="w-8 -z-10 absolute -top-8 left-0 animate-spin duration-2000 md:w-14 md:right-0 md:left-auto "
-        />
+        <Engine />
         
       </section>
       <Network />
       <EllipseBackground 
-        className="w-52 h-52 -bottom-16 -right-8"
+        className="w-40 h-40 -bottom-16 -right-8 md:w-56 md:h-56"
       />
        <EllipseBackground 
-        className="w-52 h-52 -top-8 -right-8"
+        className="w-40 h-40 -top-8 -right-8 md:w-56 md:h-56"
       />
     </section>
     </div>

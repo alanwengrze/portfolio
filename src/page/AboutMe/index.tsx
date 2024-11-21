@@ -1,4 +1,4 @@
-import { CardAboutMe } from "../../components/CardAboutMe"
+import { CardAboutMe } from "./CardAboutMe"
 export function AboutMe() {
   return (
     <div 

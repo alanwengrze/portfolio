@@ -1,4 +1,4 @@
-import { CertificateHoverCard } from "@/components/CertificateHoverCard"
+import { CertificateHoverCard } from "@/page/AboutMe/CertificateHoverCard"
 import { CERTIFICATE } from "@/data/CERTIFICATE"
 export function Certificates() {
   return(

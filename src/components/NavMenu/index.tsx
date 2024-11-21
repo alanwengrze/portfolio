@@ -1,6 +1,6 @@
 import { NavigationMenuList } from "@radix-ui/react-navigation-menu"
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuTrigger } from "../ui/navigation-menu"
-import { ItemList } from "../ItemList"
+import { ItemList } from "./ItemList"
 
 export function NavMenu () {
   return(

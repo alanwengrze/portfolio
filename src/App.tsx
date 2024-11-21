@@ -2,7 +2,6 @@ import { NavMenu } from "./components/NavMenu"
 import { Presentation } from "./page/Presentation" 
 import { AboutMe } from "./page/AboutMe"
 import { Projects } from "./page/Projects"
-
 import { Title } from "./components/Title"
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -10,8 +9,7 @@ import Aos from "aos";
 import { Contact } from "./page/Contact"
 import { ThemeProvider } from "./components/theme-provider"
 import { ModeToggle } from "./components/mode-toggle"
-import { NetworkIcon } from "./page/Presentation/NetworkIcon"
-import { SiGithub, SiLinkedin } from "react-icons/si"
+import { Footer } from "./components/Footer"
 function App() {
   useEffect(() => {
     Aos.init({
@@ -40,21 +38,7 @@ function App() {
             <Title title="Contato"/>
             <Contact />
           </section>
-          <footer className="w-full h-32 flex flex-col justify-center gap-4">
-          <nav className="flex gap-2 justify-center text-primary-foreground"> 
-            <NetworkIcon 
-              link="https://github.com/AlanWengrze"
-              className="hover:text-primary/100"
-              children={<SiGithub title="Github"/>}
-            />
-            <NetworkIcon 
-              link="https://www.linkedin.com/in/alanwengrze/"
-              className="hover:text-blue-500"
-              children={<SiLinkedin title="Linkedin"/>}
-            />
-          </nav>
-          <p className="text-center">Desenvolvido por Alan Wengrze &copy; 2024</p>
-          </footer>
+          <Footer />
         </main>
       </section>
     </ThemeProvider>

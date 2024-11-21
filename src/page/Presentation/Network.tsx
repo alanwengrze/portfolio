@@ -1,6 +1,6 @@
 import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si"
-import { NetworkIcon } from "./NetworkIcon"
-import { EllipseBackground } from "./EllipseBackground"
+import { NetworkIcon } from "../../components/NetworkIcon"
+import { EllipseBackground } from "../../components/EllipseBackground"
 export function Network() {
   return(
     <section className="relative">
