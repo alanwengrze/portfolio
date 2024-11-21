@@ -12,7 +12,7 @@ export function Presentation() {
     >
       <section 
         aria-label="Apresentação"
-        data-aos="fade-in" 
+        
         className="relative"
       >
         <p className="md:text-xl">Olá! Eu sou Alan Wengrze</p>
