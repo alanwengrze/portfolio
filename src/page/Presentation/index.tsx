@@ -7,15 +7,21 @@ export function Presentation() {
     <div className="relative overflow-hidden">
       <section
       arai-label="Página inicial"
-      className=" bgImage overflow-hidden w-full min-h-[calc(100vh-2rem)] flex flex-col items-center justify-center border-b border-border"
+      className=" bgImage w-full h-screen flex flex-col items-center justify-center border-b border-border"
       id="presentation"
     >
       <section
         aria-label="Apresentação"
         className="relative"
       >
-        <p className="md:text-xl">Olá! Eu sou Alan Wengrze</p>
-        <h1 className="text-xl font-extrabold md:text-4xl  text-primary-foreground">Desenvolvedor fullstack.</h1>
+        <p 
+          className="md:text-xl my-4"
+          data-aos="fade-down"
+        >Olá! Eu sou Alan Wengrze</p>
+        <h1 
+          className="text-xl font-extrabold md:text-4xl  text-primary-foreground"
+          data-aos="fade-up"
+        >Desenvolvedor fullstack.</h1>
         <Engine />
         
       </section>

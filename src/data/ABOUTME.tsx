@@ -16,19 +16,19 @@ export const ABOUTME: AboutMe[] = [
     id: 1,
     title: "Olá! Eu sou Alan Wengrze",
     header: <MyselfHeader />,
-    description: "Comecei os estudos de desenvolvimento web em 2019, mas foi a partir de 2023 que comecei a me dedicar ao desenvolvimento fullstack. No início de 2024, iniciei a leitura do livro 'Hábitos atômicos', livro esse que me motivou a criar novos hábitos, desde então eu tenho me dedicado a criar bons hábitos para me tornar um desenvolvedor e uma pessoa melhor todos os dias."
+    description: "Conheci a programação em 2019, mas acabei por seguir outro caminho. Em 2023 decidi que me dedicaria 100% ao desenvolvimento web. Hoje, meu foco é criar aplicações modernas, de alta performance e principalmente, acessíveis para todos."
   },
   {
     id: 2,
     title: "Tecnologias que utilizo no meu dia-a-dia",
     header: <StackHeader />,
-    description: "Atualmente, estou me especializando nas tecnologias que englobam o universo Javascript. Elas me permitem criar sites e aplicativos de alta qualidade e modernos."
+    description: "Atualmente, estou me especializando nas tecnologias que englobam o universo Javascript. Porém, não me prendo a tecnologia. Utilizo o que me oferece maior flexibilidade, produtividade e escalabilidade."
   },
   {
     id: 3,
     title: "Todas as tecnologias",
     header: <AllSkillsHeader  />,
-    description: "Essas são todas as tecnologias que tenho experiência. Com essas tecnologias posso construir projetos que vão atender as suas necessidades. Projetos completamente responsivos, com design moderno, performance, acessibilidade e segurança. E principalmente, com uma enorme facilidade de manutenção e escala.",
+    description: "Essas são todas as tecnologias que tenho experiência. Com elas, posso construir projetos que vão atender as suas necessidades. Projetos completamente responsivos, com design moderno, performance, acessibilidade e segurança. Além da considerável facilidade de manutenção e escala.",
   },
   {
     id: 4,

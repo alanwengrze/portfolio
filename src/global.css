@@ -115,7 +115,7 @@
   }
 
   .link {
-    @apply inline-flex w-fit items-center justify-end gap-2 text-popover-foreground text-sm bg-primary rounded-md px-2 py-1 md:text-base;
+    @apply inline-flex w-fit items-center justify-end gap-2 text-popover-foreground text-sm bg-primary rounded-md px-2 py-1 md:text-base hover:bg-secondary/100 hover:saturate-200 duration-500 ;
   }
 
   /* text color like p, span */
@@ -154,11 +154,14 @@
   }
 
   .iconShadowDark {
-    @apply border-e-2 shadow-inner shadow-slate-600;
+    @apply border-e-2 shadow-inner shadow-slate-600 fade-in-10 fade-out-10 duration-500;
   }
   
   .bgStyleIcon {
     @apply  border-border-icon shadow-md cursor-pointer  hover:brightness-125 hover:scale-105 duration-500;
+  }
+  .cardReveal {
+    float: left;
   }
   
 }

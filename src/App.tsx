@@ -1,57 +1,25 @@
-import { NavMenu } from "./components/NavMenu"
-import { Presentation } from "./page/Presentation" 
-import { AboutMe } from "./page/AboutMe"
-import { Projects } from "./page/Projects"
-import { Contact } from "./page/Contact"
-import { Title } from "./components/Title"
 import { ThemeProvider } from "./components/theme-provider"
-import { ModeToggle } from "./components/mode-toggle"
-import { Footer } from "./components/Footer"
-import { useRef } from "react";
-import gsap from "gsap"
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useEffect } from "react"
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { Suspense, lazy } from "react"
+import { Loading } from "./components/Loading"
 
-
+const AllContent = lazy(() => import("./page/AllContent"))
 function App() {
-  const container = useRef(null);
-  const box = useRef(null);
-  gsap.registerPlugin(useGSAP, ScrollTrigger)
 
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+      easing: "ease-in-out",
+      delay: 100
+    })
+  }, [])
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <section
-        ref={container}
-        className="relative mx-auto xl:w-10/12 px-4 scroll-smooth duration-1000"
-      >
-        <header className="z-50 top-0 sticky flex justify-between items-center p-2 bg-background/70 backdrop-blur-lg border border-border">
-          <NavMenu />
-          <ModeToggle />
-        </header>
-        <main className="relative flex flex-col gap-4 border border-border rounded-md">
-          <section >
-            <Presentation
-            />
-          </section>
-          
-          <section
-            id="about"
-            ref={box}
-          >
-            <Title title="Sobre mim"/>
-            <AboutMe />
-          </section>
-          <section id="projects">
-            <Title title="Projetos recentes"/>
-            <Projects />
-          </section>
-          <section id="contact">
-            <Title title="Contato"/>
-            <Contact />
-          </section>
-          <Footer />
-        </main>
-      </section>
+      <Suspense fallback={<Loading />}>
+        <AllContent />
+      </Suspense> 
     </ThemeProvider>
     
   )

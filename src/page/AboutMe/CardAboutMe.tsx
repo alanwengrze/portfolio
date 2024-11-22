@@ -8,11 +8,15 @@ export function CardAboutMe() {
     <div aria-label="Sobre mim" className="px-4 grid gird-cols-1 gap-4 lg:grid lg:grid-cols-2 lg:auto-rows-auto ">
       {
         ABOUTME.map((aboutme) => (
-          <Card key={aboutme.id} className={` bg-inherit relative overflow-hidden mx-auto `}>
+          <Card 
+            key={aboutme.id} 
+            className={` bg-inherit relative overflow-hidden mx-auto `}
+            data-aos={`${aboutme.id === 4 ? "" : "fade-in"}`}
+          >
           <CardContent className=" flex flex-col mt-12">
             {aboutme.header}
             <section className="mt-12">
-              <CardTitle className="">{aboutme.title}</CardTitle>
+              <CardTitle>{aboutme.title}</CardTitle>
               <CardDescription className="cardDescription my-4">{aboutme.description}</CardDescription>
 
               {

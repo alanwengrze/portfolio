@@ -12,7 +12,10 @@ interface CardProjectProps {
 export function CardProject({project}: CardProjectProps) {
   return(
     <>
-      <Card className="mb-8 z-10 bg-inherit overflow-hidden flex flex-col lg:h-full lg:justify-between">
+      <Card 
+        className="mb-8 z-10 bg-inherit overflow-hidden flex flex-col lg:h-full lg:justify-between"
+        data-aos="fade-down"
+      >
       <div aria-label="Imagem do projeto" className="mb-4">{project.image}</div>
       <CardHeader>
           <CardTitle className="mb-4">{project.title}</CardTitle>
@@ -20,7 +23,7 @@ export function CardProject({project}: CardProjectProps) {
           <a 
             href={project.link}
             target="_blank"
-            className="link"
+            className="link absolute  right-4 flex"
           >Ver projeto  <FaExternalLinkAlt /></a>
       </CardHeader>
         <CardContent className="mt-8">
