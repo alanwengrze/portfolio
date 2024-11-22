@@ -8,9 +8,6 @@ export function Engine(){
       src={theme === "dark" ? engineDark : engineLight} 
       alt="Engrenagem com animação de rotação" 
       className="w-8 -z-10 absolute -top-8 left-0 md:w-14 md:right-0 md:left-auto rotate-45"
-      data-aos="fade-in"
-      data-aos-duration="1000"
-      data-aos-once="true"
       loading="lazy"
     />
   )
