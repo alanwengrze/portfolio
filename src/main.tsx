@@ -13,10 +13,12 @@ createRoot(document.getElementById('root')!).render(
         unstyled: true,
         classNames: {
           toast: 'flex gap-2 items-center bg-background p-2 rounded-md',
-          title: 'text-white',
+          title: 'text-foreground',
           description: 'text-red-400',
           icon: 'text-white',
           error: 'bg-red-900',
+          success: 'bg-green-900',
+          loading: 'bg-yellow-900',
         },
       }}
     />
