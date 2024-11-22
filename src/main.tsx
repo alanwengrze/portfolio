@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
       toastOptions={{
         unstyled: true,
         classNames: {
-          toast: 'flex gap-2 items-center bg-background p-2 rounded-md',
+          toast: 'flex gap-2 items-center bg-background p-2 rounded-md text-white',
           title: 'text-white',
           description: 'text-red-400',
           icon: 'text-white',
