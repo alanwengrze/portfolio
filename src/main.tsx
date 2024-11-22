@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')!).render(
         unstyled: true,
         classNames: {
           toast: 'flex gap-2 items-center bg-background p-2 rounded-md',
-          title: 'text-foreground',
+          title: 'text-white',
           description: 'text-red-400',
           icon: 'text-white',
           error: 'bg-red-900',
