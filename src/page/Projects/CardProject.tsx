@@ -23,7 +23,7 @@ export function CardProject({project}: CardProjectProps) {
           <a 
             href={project.link}
             target="_blank"
-            className="link absolute  right-4 flex"
+            className="link absolute right-4 bottom-40"
           >Ver projeto  <FaExternalLinkAlt /></a>
       </CardHeader>
         <CardContent className="mt-8">

@@ -31,7 +31,7 @@ export function Contact () {
 
   const onSubmit = async (data: ContactFormData) => {
     try{
-      await axios.post("https://formspree.io/f/", data, {
+      await axios.post("https://formspree.io/f/mldelgvz", data, {
         headers: {
           Accept: "application/json",
           'Content-Type': 'application/json'
