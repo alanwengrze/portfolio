@@ -9,7 +9,9 @@ export function NavMenu () {
         <NavigationMenuItem className="rounded-md">
           <NavigationMenuTrigger className="border border-border rounded-md">Menu</NavigationMenuTrigger>
             
-          <NavigationMenuContent className="min-w-60 bg-background p-8 h-auto text-opacity-95"
+          <NavigationMenuContent 
+          className="min-w-60 bg-background p-8 h-auto text-opacity-95"
+
           >
             <ul className=" m-auto flex flex-col gap-4"
             data-aos="fade-up"

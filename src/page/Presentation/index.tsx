@@ -7,10 +7,10 @@ export function Presentation() {
     <div className="relative overflow-hidden">
       <section
       arai-label="Página inicial"
-      className=" bgImage overflow-hidden w-full h-screen flex flex-col items-center justify-center border-b border-border"
+      className=" bgImage overflow-hidden w-full min-h-[calc(100vh-2rem)] flex flex-col items-center justify-center border-b border-border"
       id="presentation"
     >
-      <section 
+      <section
         aria-label="Apresentação"
         className="relative"
       >

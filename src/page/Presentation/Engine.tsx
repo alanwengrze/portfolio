@@ -7,7 +7,7 @@ export function Engine(){
     <img 
       src={theme === "dark" ? engineDark : engineLight} 
       alt="Engrenagem com animação de rotação" 
-      className="w-8 -z-10 absolute -top-8 left-0 animate-spin duration-2000 md:w-14 md:right-0 md:left-auto"
+      className="w-8 -z-10 absolute -top-8 left-0 md:w-14 md:right-0 md:left-auto"
     />
   )
 }
