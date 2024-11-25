@@ -9,7 +9,7 @@ interface CardProjectProps {
   project: Project
 }
 
-export function CardProject({project}: CardProjectProps) {
+export default function CardProject({project}: CardProjectProps) {
   return(
     <>
       <Card 

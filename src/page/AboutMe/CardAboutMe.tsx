@@ -3,7 +3,7 @@ import { ABOUTME } from "@/data/ABOUTME"
 import { Certificates } from "@/page/AboutMe/Certificates";
 import { EllipseBackground } from "@/components/EllipseBackground";
 
-export function CardAboutMe() {
+export default function CardAboutMe() {
   return(
     <div aria-label="Sobre mim" className="px-4 grid gird-cols-1 gap-4 lg:grid lg:grid-cols-2 lg:auto-rows-auto ">
       {

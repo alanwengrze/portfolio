@@ -1,4 +1,6 @@
-import { CardAboutMe } from "./CardAboutMe"
+import { lazy } from "react"
+
+const CardAboutMe = lazy(() => import("./CardAboutMe"))
 export function AboutMe() {
   return (
     <div 
