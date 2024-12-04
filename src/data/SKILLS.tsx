@@ -2,7 +2,8 @@ import {
   SiNodedotjs, SiReact, SiTypescript, SiJavascript, SiStyledcomponents, SiHtml5, SiCss3, SiTailwindcss, SiGit, SiGithub, SiVisualstudiocode, SiFigma, SiAxios, SiInsomnia, SiExpress, SiSqlite, SiKnexdotjs, SiJsonwebtokens, SiReacthookform, SiReactrouter, SiShadcnui,
   SiZod,
   SiImmer,
-  SiJest
+  SiJest,
+  SiRadixui
 } from "react-icons/si";
 
 export const SKILLS = [
@@ -30,4 +31,5 @@ export const SKILLS = [
   { name: "Zod", icon: <SiZod title="Zod" /> },
   { name: "Immer", icon: <SiImmer title="Immer" /> },
   { name: "Jest", icon: <SiJest title="Jest" /> },
+  { name: "Radix UI", icon: <SiRadixui title="Radix UI" /> },
 ]

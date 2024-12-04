@@ -45,5 +45,14 @@ export const PROJECTS: Project[] = [
     link: 'https://yourfavoritemovies.netlify.app/',
     repo: 'https://github.com/alanwengrze/favoriteMovies-frontend',
     techs: ["React", "Javascript", "Styled Components", "Node.js", "Axios", "Express", "SQLite", "Knex.js", "JSON Web Tokens", "React Router" ]
+  },
+  {
+    id: Math.random().toString(),
+    title: 'DT Money',
+    description: 'DT Money é uma aplicação web que simula um sistema de controle financeiro. Com ele, o usuário pode realizar transações com seus gastos, receitas e saldo atual. Além disso, pode também aplicar pesquisas de gastos e receitas por descrição.',
+    image: <ImgDesign alt="DT Money" src="./dt-money.webp"/>,
+    link: 'https://ignite-dt-money-nu.vercel.app/',
+    repo: 'https://github.com/alanwengrze/ignite_dt-money',
+    techs: ["React", "Typescript", "Styled Components", "Axios", "Zod", "React Hook Form", "Radix UI" ]
   }
 ]
