@@ -65,6 +65,7 @@ export function Contact () {
               aria-label="Formulário de contato"
               onSubmit={form.handleSubmit(onSubmit)}
               className="flex flex-col gap-6 bg-background lg:w-full mt-8"
+              method="POST"
             >
             <FormField
               control={form.control}
