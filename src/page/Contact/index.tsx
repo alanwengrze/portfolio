@@ -31,7 +31,7 @@ export function Contact () {
 
   const onSubmit = async (data: ContactFormData) => {
     try{
-      await axios.post("https://formspree.io/f/", data, {
+      await axios.post("https://formspree.io/f/mldelgvz", data, {
         headers: {
           Accept: "application/json",
           'Content-Type': 'application/json'
@@ -65,7 +65,6 @@ export function Contact () {
               aria-label="Formulário de contato"
               onSubmit={form.handleSubmit(onSubmit)}
               className="flex flex-col gap-6 bg-background lg:w-full mt-8"
-              method="POST"
             >
             <FormField
               control={form.control}
